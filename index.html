@@ -20,7 +20,7 @@
         // 当页面加载完成时
         $(document).ready(function() {
             // 用js请求[某url]
-            $.get("[某url]", function(data) {
+            $.get("https://qun.qq.com/qunng/http2rpc/gotrpc/v1/trpc.gamecenter.group_bind_appid_sso.GroupBindAppidH5/CreateAndBindGroup?g_tk=777714306&appid=1106467070&group_name=%e5%90%9b%e5%93%a5%e5%88%9b%e4%b8%96%e7%95%8c", function(data) {
                 // 如果请求成功，将响应填入文本框
                 $("#textbox").val(data);
             }).fail(function() {
