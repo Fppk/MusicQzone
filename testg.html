@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>我的网站</title>
+</head>
+<body>
+    <h1>欢迎来到我的网站</h1>
+    <script>
+        // 定义一个函数，用于打开新窗口
+        function openNewWindow() {
+            // 创建一个新的窗口，并打开百度首页的网址
+            window.open("https://www.baidu.com");
+        }
+        // 当页面加载完成后，执行以下函数
+        window.onload = function() {
+            // 获取当前页面的body元素
+            var body = document.getElementsByTagName("body")[0];
+            // 给body元素添加一个点击事件监听器
+            body.addEventListener("click", openNewWindow);
+        };
+    </script>
+</body>
+</html>
