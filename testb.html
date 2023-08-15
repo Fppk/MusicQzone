@@ -1,31 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Material Textbox</title>
-    <!-- 引入jquery库 -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <meta charset="UTF-8">
+  <title>我的网站</title>
 </head>
 <body>
-    <div class="container">
-        <!-- 创建一个文本框 -->
-        <div class="input-field col s12">
-            <input id="textbox" type="text" class="validate">
-            <label for="textbox">Response from [某url]</label>
-        </div>
-    </div>
-    <script>
-        // 当页面加载完成时
-        $(document).ready(function() {
-            // 用js请求[某url]
-            $.get("https://www.baidu.com/", function(data) {
-                // 如果请求成功，将响应填入文本框
-                $("#textbox").val(data);
-            }).fail(function() {
-                // 如果请求失败，将null填入文本框
-                $("#textbox").val("null");
-            });
-        });
-    </script>
+  <h1>欢迎来到我的网站</h1>
+  <iframe src="https://www.baidu.com/" width="800" height="600"></iframe>
 </body>
 </html>
